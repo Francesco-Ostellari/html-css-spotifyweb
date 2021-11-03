@@ -124,7 +124,7 @@ main {
 }
 
 .lista-menu {
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0;
 }
 
 .menu {
@@ -133,7 +133,18 @@ main {
 
 .li-menu {
   margin-bottom: 10px;
+  padding-left: 15px;
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.li-menu:hover {
+  border-left: 4px solid var(--bg-sottolineatura);
+}
+
 
 .svg {
   width: 7%;
@@ -141,45 +152,116 @@ main {
 }
 
 .text-menu {
-  color: white;
+  color: var(--color-text);
   font-weight: 600;
   font-size: 0.9em;
 }
 
+.text-menu:hover {
+  color: white;
+}
+
 .playlist {
-  height: 50px;
-  width: 200px;
-  background-color: brown;
-  margin: 10px 0 0 10px;
+  margin: 30px 0 0 0;
+  padding-left: 15px;
+}
+
+.text-playlist {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.add-playlist {
+  height: 40px;
+  width: 40px;
+  background-color: var(--color-text);
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.text-create-playlist {
+  line-height: 40px;
+  color: var(--color-text);
+  display: inline-block;
+  font-weight: 600;
+}
+
+.plus {
+  font-size: 2.5em;
+  color: black;
+  line-height: 40px;
+  font-weight: 600;
+  display: inline-block;
 }
 
 .lista-playlist {
-  height: 300px;
-  width: 200px;
-  background-color: brown;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0;
+  padding-left: 15px;
+  height: 30vh;
   overflow: auto;
+}
+
+.name-playlist {
+  list-style: none;
+}
+
+.li-name-playlist {
+  color: var(--color-text);
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 .container-profile {
   position: absolute;
   bottom: 100px;
-  background-color: pink;
-  height: 100px;
-  width: 200px;
 }
 
 .app {
-  background-color: brown;
-  width: 200px;
-  height: 50%;
+  width: 93%;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--color-text);
+  padding: 10px 0;
+}
+
+.download {
+  width: 5%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.installa {
+  color: var(--color-text);
+  font-weight: 600;
 }
 
 .profile {
-  background-color: blueviolet;
-  width: 200px;
-  height: 50%;
+  width: 93%;
+  margin: 10px auto 10px auto;
 }
+
+.img-profile {
+  width: 70%;
+  margin-right: 10px; 
+  margin: 0 auto;
+}
+
+.container-img-profile {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-text);
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.name-profile {
+  line-height: 30px;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
 footer {
   height: 100px;
   width: 100%;

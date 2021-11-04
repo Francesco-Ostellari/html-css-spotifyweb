@@ -444,9 +444,153 @@ a {
   font-weight: 700;
 }
 
+/* /layout main */
+
+/* layout footer */
 footer {
   height: 90px;
   width: 100%;
   background-color: var(--bg-footer);
 }
-/* /layout main */
+
+.footer {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.col-left-footer {
+  align-items: center;
+}
+
+.img-footer {
+  width: 50px;
+}
+
+.container-title-footer {
+  margin-left: 10px;
+}
+
+.title-footer {
+  color: white;
+  font-weight: 800;
+}
+
+.subtitle-footer {
+  color: var(--color-text);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.favourite {
+  margin-left: 50px;
+}
+
+.icona {
+  margin-right: 10px;
+}
+
+.fa-heart {
+  color: var(--color-text);
+}
+
+.fa-folder {
+  color: var(--color-text);
+}
+
+.col-center-footer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-random {
+  color: #C1C1C1;
+  font-size: 1.5em;
+  margin-right: 30px;
+}
+
+.fa-step-backward {
+  color: #C1C1C1;
+  font-size: 1.5em;
+}
+
+.fa-play-circle {
+  color: #C1C1C1;
+  font-size: 2em;
+  margin: 0 40px;
+}
+
+.fa-step-forward {
+  color: #C1C1C1;
+  font-size: 1.5em;
+  margin-right: 30px;
+}
+
+.fa-redo {
+  color: #C1C1C1;
+  font-size: 1.5em;
+}
+
+.time {
+  color: #C1C1C1;
+}
+
+.center-footer-top {
+  margin-bottom: 10px;
+}
+
+.center-footer-bottom {
+  align-items: center;
+}
+
+.bar-lightgrey {
+  width: 60px;
+  height: 4px;
+  border-radius: 30px;
+  background-color: #C1C1C1;
+  margin-left:  20px;
+  display: inline-block;
+}
+
+.bar-grey {
+  width: 420px;
+  height: 4px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-right: 20px;
+  background-color: #5A5A5A;
+}
+
+.col-right-footer {
+  align-items: center;
+}
+.fa-list {
+  color: #C1C1C1;
+  margin-right: 10px;
+}
+
+.fa-desktop {
+  color: #C1C1C1;
+  margin-right: 10px;
+}
+
+.fa-volume-up {
+  color: #C1C1C1;
+  margin-right: 10px;
+}
+
+
+#bar-lightgrey {
+  width: 20px;
+  height: 4px;
+  align-self: center;
+  margin: 0;
+}
+
+#bar-grey {
+  width: 80px;
+  height: 4px;
+  align-self: center;
+  margin: 0;
+}
+/* /layout footer */

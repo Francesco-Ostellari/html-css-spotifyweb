@@ -15,7 +15,7 @@ body {
 }
 
 :root {
-  --bg-pubblicità: #080B12;
+  --bg-pubblicità: rgba(0, 0, 0, 0.4);
   --bg-colonna-destra-main: #141922;
   --bg-footer: #282828;
   --bg-sottolineatura: #ADFF2F;
@@ -77,10 +77,13 @@ main {
   top: 0;
   right: 0;
   z-index: 999;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .row-main {
-  margin-top: 80px;
+  padding-top: calc(90px + 2em);
+  padding-bottom: 2em;
   width: 100%;
   overflow: auto;
 }
@@ -138,12 +141,16 @@ main {
 }
 
 .logo {
-  margin: 10px 0 0 10px;
+  padding: 10px 0 0 15px;
 }
 
 .img-logo {
-  width: 35%;
+  width: 60%;
   margin-bottom: 30px;
+}
+
+.logo-small {
+  display: none;
 }
 
 .lista-menu {
@@ -170,7 +177,7 @@ a {
 
 
 .svg {
-  width: 7%;
+  width: 15%;
   vertical-align: middle;
 }
 
@@ -237,7 +244,7 @@ a {
 }
 
 .container-profile {
-  bottom: 100px;
+  width: 100%;
   height: 80px;
 }
 
@@ -249,7 +256,7 @@ a {
 }
 
 .download {
-  width: 5%;
+  width: 10%;
   vertical-align: middle;
   margin-right: 10px;
 }
@@ -259,9 +266,10 @@ a {
   font-weight: 600;
 }
 
-.profile {
+.profile-flex {
   width: 93%;
   margin: 10px auto 10px auto;
+  display: flex;
 }
 
 .img-profile {
@@ -284,6 +292,99 @@ a {
   color: var(--color-text);
   font-weight: 600;
 }
+
+
+.btn-call-to-action {
+  padding: 15px 40px;
+  margin-right: 25px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  
+}
+
+.text-btn {
+  color: white;
+  font-weight: 800;
+}
+@media screen and (max-width: 600px) {
+  .col-left {
+    width: 50px;
+  }
+  .col-right {
+    width: calc(100% - 50px);
+  }
+  .row-top {
+    width: calc( 100% - 50px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img-logo {
+    display: none;
+  }
+  .logo-small {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .logo {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .text-menu {
+    display: none;
+  }
+
+  .svg {
+    width: 100%;
+  }
+  
+  .li-menu {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .playlist {
+    display: none;
+  }
+
+  .lista-playlist {
+    display: none;
+  }
+
+  .installa {
+    display: none;
+  }
+
+  .name-profile {
+    display: none;
+  }
+
+  .app {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .download {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-profile {
+    padding: 10px;
+  }
+
+  .profile-flex {
+    display: block;
+  }
+}
+
+
 
 footer {
   height: 90px;

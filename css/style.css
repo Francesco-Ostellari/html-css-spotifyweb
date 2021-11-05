@@ -110,6 +110,7 @@ main {
   max-width: 300px;
   min-width: 100px;
   padding: 0 10px;
+  width: calc(100% / 6);
 }
 
 .img-song-cover {
@@ -155,6 +156,7 @@ main {
   min-width: 100px;
   padding: 0 10px;
   margin-left: 80px;
+  width: calc(100% / 6);
 }
 
 .container-personal-song {
@@ -196,8 +198,10 @@ a {
   color: var(--color-text);
 }
 
-.li-menu:hover {
+.li-menu-home {
   border-left: 4px solid var(--bg-sottolineatura);
+  margin-bottom: 10px;
+  padding-left: 11px; 
 }
 
 
@@ -243,6 +247,10 @@ a {
   font-weight: 600;
 }
 
+.section-playlist:hover a {
+  color: white;
+}
+
 .plus {
   font-size: 2.5em;
   color: black;
@@ -268,6 +276,10 @@ a {
   margin-top: 20px;
 }
 
+.li-name-playlist:hover a {
+  color: white;
+}
+
 .container-profile {
   width: 100%;
   height: 80px;
@@ -278,6 +290,10 @@ a {
   margin: 0 auto;
   border-bottom: 1px solid var(--color-text);
   padding: 10px 0;
+}
+
+.app:hover a {
+  color: white;
 }
 
 .download {
@@ -295,6 +311,10 @@ a {
   width: 93%;
   margin: 10px auto 10px auto;
   display: flex;
+}
+
+.profile-flex:hover a {
+  color: white;
 }
 
 .img-profile {
@@ -334,6 +354,7 @@ a {
 .text-btn {
   color: white;
   font-weight: 800;
+  display: inline-block;
 }
 @media screen and (max-width: 600px) {
   .col-left {
@@ -426,13 +447,11 @@ a {
   align-items: center;
 }
 
-.bordo {
-  width: 30px;
-  height: 2px;
-  overflow: hidden;
+.li-lista-top:hover .a-lista-top {
+  color: white;
 }
 
-.li-lista-top:hover .bordo {
+.bordo {
   width: 30px;
   height: 2px;
   background-color: var(--bg-sottolineatura);
@@ -485,6 +504,47 @@ footer {
 .favourite {
   margin-left: 50px;
 }
+
+a:hover .fa-heart {
+  color: white;
+}
+
+a:hover .fa-folder {
+  color: white;
+}
+
+a:hover .fa-random {
+  color: white;
+}
+
+a:hover .fa-step-backward {
+  color: white;
+}
+
+a:hover .fa-play-circle {
+  color: white;
+}
+
+a:hover .fa-step-forward {
+  color: white;
+}
+
+a:hover .fa-redo {
+  color: white;
+}
+
+a:hover .fa-desktop {
+  color: white;
+}
+
+a:hover .fa-volume-up {
+  color: white;
+}
+
+a:hover .fa-list {
+  color: white;
+}
+
 
 .icona {
   margin-right: 10px;
@@ -564,6 +624,11 @@ footer {
 .col-right-footer {
   align-items: center;
 }
+
+.container-col-right-footer{
+  align-items: center;
+}
+
 .fa-list {
   color: #C1C1C1;
   margin-right: 10px;

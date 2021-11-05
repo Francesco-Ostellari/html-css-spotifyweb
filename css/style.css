@@ -430,13 +430,15 @@ footer {
 }
 
 .footer {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 10px;
 }
 
 .col-left-footer {
   align-items: center;
+  width: 200px;
+  justify-content: center;
+  padding-left: 20px;
 }
 
 .img-footer {
@@ -459,7 +461,7 @@ footer {
 }
 
 .favourite {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 a:hover .fa-heart {
@@ -518,34 +520,18 @@ a:hover .fa-list {
 .col-center-footer {
   flex-direction: column;
   align-items: center;
+  width: calc(100% - (200px * 2));
 }
 
-.fa-random {
+.center-footer-top i {
   color: #C1C1C1;
   font-size: 1.5em;
-  margin-right: 30px;
+  margin-right: 20px;
+  justify-content: center;
 }
 
-.fa-step-backward {
-  color: #C1C1C1;
-  font-size: 1.5em;
-}
-
-.fa-play-circle {
-  color: #C1C1C1;
-  font-size: 2em;
-  margin: 0 40px;
-}
-
-.fa-step-forward {
-  color: #C1C1C1;
-  font-size: 1.5em;
-  margin-right: 30px;
-}
-
-.fa-redo {
-  color: #C1C1C1;
-  font-size: 1.5em;
+#redo {
+  margin: 0;
 }
 
 .time {
@@ -554,14 +540,16 @@ a:hover .fa-list {
 
 .center-footer-top {
   margin-bottom: 10px;
+  justify-content: center;
 }
 
 .center-footer-bottom {
   align-items: center;
+  justify-content: center;
 }
 
 .bar-lightgrey {
-  width: 60px;
+  width: 10%;
   height: 4px;
   border-radius: 30px;
   background-color: #C1C1C1;
@@ -569,8 +557,38 @@ a:hover .fa-list {
   display: inline-block;
 }
 
+.bar-lightgrey:hover {
+  width: 10%;
+  height: 4px;
+  border-radius: 30px;
+  background-color: var(--bg-sottolineatura);
+  margin-left:  20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.circle {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.bar-lightgrey:hover .circle {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+ 
+}
+
+
+
 .bar-grey {
-  width: 420px;
+  width: 40%;
   height: 4px;
   border-radius: 30px;
   display: inline-block;
@@ -580,10 +598,14 @@ a:hover .fa-list {
 
 .col-right-footer {
   align-items: center;
+  width: 200px;
+  justify-content: center;
+  padding-left: 20px;
 }
 
 .container-col-right-footer{
   align-items: center;
+  width: 100%;
 }
 
 .fa-list {
@@ -596,6 +618,10 @@ a:hover .fa-list {
   margin-right: 10px;
 }
 
+.center-footer-bottom {
+  width: 100%;
+}
+
 .fa-volume-up {
   color: #C1C1C1;
   margin-right: 10px;
@@ -603,16 +629,15 @@ a:hover .fa-list {
 
 
 #bar-lightgrey {
-  width: 20px;
+  width: 10%;
   height: 4px;
-  align-self: center;
   margin: 0;
 }
 
 #bar-grey {
-  width: 80px;
+  width: 30%;
   height: 4px;
-  align-self: center;
+
   margin: 0;
 }
 /* /layout footer */ 
@@ -658,6 +683,10 @@ a:hover .fa-list {
   .song-daily {
     min-width: 190px;
   }
+
+  footer {
+    min-width: 700px;
+  }
 }
 
 
@@ -671,6 +700,15 @@ a:hover .fa-list {
     min-width: 230px;
   }
 
+  footer {
+    min-width: 600px;
+  }
+
+  .time {
+    color: #C1C1C1;
+    display: inline-block;
+    font-size: 0.7em; 
+  }
   .col-left {
     width: 50px;
   }
